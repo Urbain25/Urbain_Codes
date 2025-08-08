@@ -3,6 +3,7 @@
 Create two charts from synthetic data generated in-code:
 1) Bar chart with standard error bars (per group)
 2) Monthly line chart (evolution over time)
+3) I add this only for the test 
 
 Run:  python plots_demo.py
 """
