@@ -31,9 +31,11 @@ for g in groups:
     for v in values:
         records.append({"group": g, "value": float(v)})
 
+records
 # Put into a DataFrame
 df_groups = pd.DataFrame(records)
 
+df_groups
 # ------------ 2) Compute mean and standard error per group ------------
 # Group by 'group' and compute mean, standard deviation (sd), and sample size (n)
 summary = (
@@ -66,7 +68,7 @@ values_ts = trend + noise
 
 # Pack into a DataFrame
 ts_df = pd.DataFrame({"date": dates, "value": values_ts})
-
+ts_df
 # ------------ 5) Line chart (evolution over time) ------------
 fig2, ax2 = plt.subplots(figsize=(8, 4.8))
 # Plot with markers to highlight each month
